@@ -5,7 +5,7 @@ import { StrictMode } from 'react';
 import { Provider } from 'react-redux';
 import App from './App.jsx';
 import './index.css';
-import store from './Store.js';
+import store from './store.js';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
