@@ -1,0 +1,141 @@
+/* Cart.css */
+
+.cart-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: #d4edda; /* Light green background color */
+  border-radius: 10px;
+}
+
+.cart-container h2,
+.cart-container h3,
+.cart-container h4 {
+  margin: 10px 0;
+}
+
+.cart-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart-item {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-item-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.cart-item-details {
+  flex: 1;
+}
+
+.cart-item-details h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.cart-item-details p,
+.cart-item-details strong {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.button-group {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.button-group button {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  width: auto;
+  max-width: 150px;
+  text-align: center;
+}
+
+.button-group button:hover {
+  background-color: #0056b3;
+}
+
+.coupon-section,
+.cart-summary,
+.cart-container > div {
+  margin-top: 20px;
+}
+
+.coupon-section input,
+.cart-container input[type="text"],
+.cart-container select {
+  padding: 6px;
+  font-size: 14px;
+  margin-right: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.coupon-section button,
+.cart-container button {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  background: #28a745;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  width: auto;
+  max-width: 150px;
+}
+
+.coupon-section button:hover,
+.cart-container button:hover {
+  background: #218838;
+}
+
+.cart-summary {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 15px;
+}
+
+.order-completed-message {
+  background-color: #d4edda;
+  color: #301557;
+  border: 1px solid #c3e6cb;
+  padding: 15px;
+  border-radius: 6px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+/* Increased gap for manual discount buttons */
+.discount-buttons {
+  display: flex;
+  gap: 15px; /* Increased gap between buttons */
+  margin-top: 15px; /* Optional: Adds margin above the buttons */
+  flex-wrap: wrap;
+}
+

@@ -1,0 +1,144 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container for the entire app */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f8f8;
+}
+
+/* Header container */
+.app-header {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: #fff8f0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Flex row for logo + title */
+.logo-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  position: relative;
+}
+
+/* Logo on the left */
+.logo {
+  height: 80px;
+  width: 100px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+/* Title centered */
+.title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 4rem;
+  font-weight: bold;
+  color: #0671be;
+}
+
+/* Nav bar below logo-title */
+.nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px 20px;
+  background-color: #bcc8c7;
+  border-top: 1px solid #e7d4d4;
+}
+
+/* Nav links */
+.nav-bar a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #f9f4f4;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-bar a:hover,
+.nav-bar a.active {
+  background-color: #226a8b;
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .logo-title {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .title {
+    position: static;
+    transform: none;
+    margin-top: 10px;
+  }
+
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-bar a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+/* Main Content Area */
+main {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  background-color: #2d3b44;
+  color: #f1f1f1;
+  padding: 15px;
+  font-size: 0.9rem;
+  border-top: 1px solid #eee;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-bar a {
+    padding: 8px 15px;
+    width: 100%;
+    text-align: left;
+  }
+
+  .logo {
+    width: 35px;  /* Resize logo for smaller screens */
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}

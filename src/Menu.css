@@ -1,0 +1,84 @@
+/* General Body Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: auto;
+}
+
+body {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  width: auto;
+}
+
+/* App Container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+}
+
+/* Sticky Header */
+header {
+  background-color: goldenrod;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  position: sticky;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 1600px;
+}
+
+/* Nav Bar */
+.nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding: 0 1rem;
+}
+
+/* Nav Links */
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  background-color: #005fa3;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.nav-bar a:hover {
+  background-color: #003f6b;
+  transform: scale(1.05);
+}
+
+.nav-bar a.active {
+  background-color: #ff851b;
+}
+
+/* Main Content Area */
+main {
+  flex-grow: 1; /* Ensures it stretches */
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  margin: 1rem auto;
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #0074D9;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
